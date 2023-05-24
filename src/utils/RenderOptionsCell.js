@@ -11,10 +11,11 @@ const RenderOptionsCell = (params, fetchData) => {
     const [alertMessage, setAlertMessage] = useState("");
     const [alertSeverity, setAlertSeverity] = useState("");
 
+
     const handleDelete = async () => {
         // Lógica para eliminar el registro
         try {
-            const response = await axios.delete(`${process.env.REACT_APP_API_URL_PROVIDERS}${params.row.id}`);
+            const response = await axios.delete(`https://gapsi-api-rest-production.up.railway.app/api/providers/${params.row.id}`);
             console.log('Registro eliminado:', response.data);
             isCustomSnackbarOpen(true);
             setAlertMessage("Exito eliminar el registro:");

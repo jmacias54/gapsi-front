@@ -20,7 +20,7 @@ const Providers = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_API_URL_PROVIDERS}`);
+      const response = await axios.get(`https://gapsi-api-rest-production.up.railway.app/api/providers/`);
       const formattedData = response.data.map((row) => ({
         id: row._id, // Asignar el valor del campo _id como id único
         name: row.name,

@@ -60,7 +60,7 @@ const ModalIndex = ({ closeModal }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL_VERSION}`);
+        const response = await axios.get(`https://gapsi-api-rest-production.up.railway.app/version`);
         console.log(response)
         setData(response.data);
       } catch (error) {
