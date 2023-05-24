@@ -11,14 +11,6 @@ const RenderOptionsCell = (params, fetchData) => {
     const [alertMessage, setAlertMessage] = useState("");
     const [alertSeverity, setAlertSeverity] = useState("");
 
-    const handleEdit = () => {
-        // Lógica para editar el elemento
-    };
-
-    const handleDetail = () => {
-        // Lógica para ver los detalles del elemento
-    };
-
     const handleDelete = async () => {
         // Lógica para eliminar el registro
         try {
